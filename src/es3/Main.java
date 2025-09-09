@@ -10,13 +10,8 @@ public class Main {
             String string = scanner.nextLine();
             if (string.equals(":q")){
                 break;
-            } else {
-                int i=0;
-                while(i<string.length()){
-                    System.out.println(string.charAt(i));
-                    i++;
-                }
             }
+            System.out.println(String.join(",",string.split("")));
         }
     }
 }
